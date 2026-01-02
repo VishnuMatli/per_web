@@ -599,3 +599,80 @@ h1, h2, h3, h4, h5, h6 {
     /* Fix app card text for small screens */
     .package { font-size: 0.75rem; }
 }
+/* ============================================
+   MOBILE NAV FIX (App-Style Scroll)
+   ============================================ */
+
+@media (max-width: 768px) {
+    
+    /* 1. Make the navbar cleaner and stick to top */
+    .navbar {
+        background: rgba(255, 255, 255, 0.95); /* Solid clean background */
+        backdrop-filter: blur(10px);
+        padding: 0.8rem 0;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+    }
+
+    .nav-container {
+        flex-direction: column; /* Keep logo on top, menu below */
+        align-items: flex-start; /* Align to the left */
+        gap: 1rem;
+        padding: 0 1.2rem;
+    }
+
+    /* 2. Fix the Logo Size */
+    .nav-logo {
+        font-size: 1.25rem;
+        width: 100%;
+        color: var(--primary); /* Ensure logo is visible on white */
+        justify-content: space-between; /* If you add a menu icon later */
+    }
+
+    /* 3. The Magic: Horizontal Scroll Menu */
+    .nav-menu {
+        display: flex;
+        flex-direction: row; /* Force horizontal row */
+        width: 100%;
+        overflow-x: auto; /* Allow sideways scrolling */
+        gap: 0.8rem;
+        padding-bottom: 4px; /* Tiny space for touch area */
+        
+        /* Hide the ugly scrollbar but keep functionality */
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+        
+        /* Smooth momentum scrolling on iOS */
+        -webkit-overflow-scrolling: touch;
+    }
+
+    /* Hide scrollbar for Chrome/Safari */
+    .nav-menu::-webkit-scrollbar {
+        display: none;
+    }
+
+    /* 4. Style the Links as "Pills/Tabs" */
+    .nav-link {
+        white-space: nowrap; /* Prevent text wrapping */
+        padding: 0.6rem 1.2rem;
+        background: #f1f5f9; /* Light grey pill background */
+        color: #475569;
+        border-radius: 50px; /* Pill shape */
+        font-size: 0.9rem;
+        font-weight: 600;
+        border: 1px solid transparent;
+    }
+
+    /* Active/Hover State for Mobile */
+    .nav-link:hover, 
+    .nav-link:active, /* Useful for touch */
+    .nav-link:focus {
+        background: var(--primary);
+        color: white;
+        box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3);
+        transform: translateY(0); /* Remove desktop hover movement */
+    }
+    
+    .nav-link::after {
+        display: none; /* Remove the desktop underline animation */
+    }
+}
