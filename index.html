@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MITS CSE AIML - Permission Management System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-icon">📱</span>
+                <span class="logo-text">MITS CSE AIML</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#features" class="nav-link">Features</a></li>
+                <li><a href="#download" class="nav-link">Download</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Permission Management System</h1>
+            <p class="hero-subtitle">Streamlined digital permission handling for MITS CSE AIML students and faculty</p>
+            <button class="cta-btn">Download Now</button>
+        </div>
+        <div class="hero-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2 class="section-title">Why Use Our App?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Fast & Easy</h3>
+                    <p>Apply for permissions in seconds with an intuitive interface</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔒</div>
+                    <h3>Secure</h3>
+                    <p>Your data is protected with secure authentication and encryption</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3>Real-time Tracking</h3>
+                    <p>Track your permission status in real-time with notifications</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">👥</div>
+                    <h3>Mentor Integration</h3>
+                    <p>Seamless approval workflow between students, mentors, and HOD</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📱</div>
+                    <h3>Mobile Friendly</h3>
+                    <p>Fully responsive design works on all devices</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💼</div>
+                    <h3>Multiple Roles</h3>
+                    <p>Dedicated apps for Students, Faculty Mentors, and HOD</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Apps Section -->
+    <section id="download" class="apps">
+        <div class="container">
+            <h2 class="section-title">Download Apps</h2>
+            <div class="apps-grid">
+                <!-- Student App -->
+                <div class="app-card student-card">
+                    <div class="app-header">
+                        <div class="app-icon">👨‍🎓</div>
+                        <h3>Student App</h3>
+                    </div>
+                    <p class="app-version">Version 2.0.0</p>
+                    <ul class="app-features">
+                        <li>✓ Apply for permissions</li>
+                        <li>✓ View approval status</li>
+                        <li>✓ Track mentor feedback</li>
+                        <li>✓ View permission history</li>
+                    </ul>
+                    <div class="app-info">
+                        <span class="package">com.aiml.permissions</span>
+                    </div>
+                    <button class="download-btn download-btn-primary" data-app="student">
+                        <span class="download-icon">⬇️</span> Download APK
+                    </button>
+                </div>
+
+                <!-- Faculty App -->
+                <div class="app-card faculty-card">
+                    <div class="app-header">
+                        <div class="app-icon">👨‍🏫</div>
+                        <h3>Faculty App</h3>
+                    </div>
+                    <p class="app-version">Version 2.0.0</p>
+                    <ul class="app-features">
+                        <li>✓ Review student permissions</li>
+                        <li>✓ Approve/Reject requests</li>
+                        <li>✓ View mapped students</li>
+                        <li>✓ Check approval history</li>
+                    </ul>
+                    <div class="app-info">
+                        <span class="package">com.aiml.faculty</span>
+                    </div>
+                    <button class="download-btn download-btn-secondary" data-app="faculty">
+                        <span class="download-icon">⬇️</span> Download APK
+                    </button>
+                </div>
+
+                <!-- Web Version -->
+                <div class="app-card hod-card">
+                    <div class="app-header">
+                        <div class="app-icon">🌐</div>
+                        <h3>Web Version</h3>
+                    </div>
+                    <p class="app-version">Version 2.0.0</p>
+                    <ul class="app-features">
+                        <li>✓ Access from any browser</li>
+                        <li>✓ No installation needed</li>
+                        <li>✓ Real-time updates</li>
+                        <li>✓ Cross-platform support</li>
+                    </ul>
+                    <div class="app-info">
+                        <span class="package">permissions.onrender.com</span>
+                    </div>
+                    <button class="download-btn download-btn-tertiary" onclick="window.open('https://permissions.onrender.com', '_blank')">
+                        <span class="download-icon">🔗</span> Visit Website
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About This System</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Digital Permission Management</h3>
+                    <p>The MITS CSE AIML Permission Management System is a modern, mobile-first solution designed to streamline the permission approval process for students, faculty mentors, and department heads.</p>
+                    <p>Built with Flutter for cross-platform compatibility and a robust Node.js backend, this system ensures fast, secure, and transparent permission handling.</p>
+                    <h4>Key Features:</h4>
+                    <ul class="about-list">
+                        <li>Real-time permission status tracking</li>
+                        <li>Multi-level approval workflow (Student → Mentor → HOD)</li>
+                        <li>Mentor mapping and student assignment</li>
+                        <li>Digital approval history and records</li>
+                        <li>Secure authentication and data privacy</li>
+                        <li>Beautiful, intuitive user interface</li>
+                    </ul>
+                </div>
+                <div class="about-stats">
+                    <div class="stat">
+                        <div class="stat-number">3</div>
+                        <div class="stat-label">Apps</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">∞</div>
+                        <div class="stat-label">Users</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">100%</div>
+                        <div class="stat-label">Secure</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 MITS CSE AIML Permission Management System. All rights reserved.</p>
+            <p class="footer-subtitle">Built with ❤️ for students and faculty</p>
+        </div>
+    </footer>
+
+    <!-- Modal for Download Info -->
+    <div id="downloadModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modalTitle">Download Instructions</h2>
+            <p id="modalMessage"></p>
+            <div id="downloadLinks" class="download-links"></div>
+            <button class="modal-btn" onclick="closeModal()">Close</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
