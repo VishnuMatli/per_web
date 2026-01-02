@@ -401,6 +401,7 @@ body {
     justify-content: center;
     gap: 0.5rem;
     letter-spacing: 0.3px;
+    text-decoration: none;
 }
 
 .download-icon {
