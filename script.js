@@ -7,7 +7,7 @@ const APP_CONFIG = {
         name: 'Student App',
         version: '2.0.0',
         package: 'com.aiml.permissions',
-        downloadUrl: 'https://github.com/YOUR_USERNAME/YOUR_REPO/releases/download/v2.0.0/student-app-v2.0.0.apk',
+        downloadUrl: 'https://github.com/VishnuMatli/per_web/releases/download/v2.0.0/Student-App.apk',
         features: ['Browse permissions', 'Track status', 'View mentor feedback'],
         fileSize: '56.4 MB'
     },
@@ -15,17 +15,9 @@ const APP_CONFIG = {
         name: 'Faculty App',
         version: '2.0.0',
         package: 'com.aiml.faculty',
-        downloadUrl: 'https://github.com/YOUR_USERNAME/YOUR_REPO/releases/download/v2.0.0/faculty-app-v2.0.0.apk',
+        downloadUrl: 'https://github.com/VishnuMatli/per_web/releases/download/v2.0.0/Faculty-App.apk',
         features: ['Review permissions', 'Manage mentees', 'Track approvals'],
         fileSize: '52.8 MB'
-    },
-    hod: {
-        name: 'HOD App',
-        version: '2.0.0',
-        package: 'com.aiml.hod',
-        downloadUrl: 'https://github.com/YOUR_USERNAME/YOUR_REPO/releases/download/v2.0.0/hod-app-v2.0.0.apk',
-        features: ['Final approval', 'View reports', 'Analytics'],
-        fileSize: '48.5 MB'
     }
 };
 
