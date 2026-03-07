@@ -1,17 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MITS CSE AIML - Permission Management System</title>
+    <!-- Modern Fonts: Outfit for Display/Headings, Inter for Body -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- AOS (Animate On Scroll) CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+
+<body class="dark-theme">
+    <!-- Ambient Background Effects -->
+    <div id="tsparticles" class="ambient-bg"></div>
+
     <!-- Navigation -->
-    <nav class="navbar">
+    <nav class="navbar glass-panel">
         <div class="nav-container">
             <div class="nav-logo">
-                <span class="logo-icon">📱</span>
+                <div class="logo-icon-wrapper">
+                    <span class="logo-icon">📱</span>
+                </div>
                 <span class="logo-text">MITS CSE AIML</span>
             </div>
             <ul class="nav-menu">
@@ -25,159 +37,298 @@
 
     <!-- Hero Section -->
     <section id="home" class="hero">
-        <div class="hero-content">
-            <h1 class="hero-title">Permission Management System</h1>
-            <p class="hero-subtitle">Streamlined digital permission handling for MITS CSE AIML students and faculty</p>
-            <a href="#download" class="cta-btn" style="text-decoration: none; color: #6366f1;">Download Now</a>
-        </div>
-        <div class="hero-shapes">
-            <div class="shape shape-1"></div>
-            <div class="shape shape-2"></div>
-            <div class="shape shape-3"></div>
+        <div class="hero-content" data-aos="zoom-out" data-aos-duration="1000">
+            <div class="badge" data-aos="fade-down" data-aos-delay="200">✨ Version 3.2.0 Released</div>
+            <h1 class="hero-title" data-tilt data-tilt-max="10" data-tilt-speed="400" data-tilt-perspective="1000">
+                Next-Gen <br />
+                <span class="text-gradient">Permission Management</span>
+            </h1>
+            <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="400">Streamlined digital permission handling for
+                MITS CSE AIML students and faculty.
+                Experience the future of campus administration.</p>
+            <div class="hero-actions" data-aos="fade-up" data-aos-delay="600">
+                <a href="#download" class="btn btn-primary cta-btn pulse-anim">
+                    <span>Download App</span>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M5 12h14M12 5l7 7-7 7" />
+                    </svg>
+                </a>
+                <a href="#about" class="btn btn-secondary">Learn More</a>
+            </div>
         </div>
     </section>
 
     <!-- Features Section -->
-    <section id="features" class="features">
-        <div class="container">
-            <h2 class="section-title">Why Use Our App?</h2>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">⚡</div>
-                    <h3>Fast & Easy</h3>
-                    <p>Apply for permissions in seconds with an intuitive interface</p>
+    <section id="features" class="features container">
+        <div class="section-header" data-aos="fade-up">
+            <h2 class="section-title">Why Use Our System?</h2>
+            <p class="section-desc">Designed for velocity, engineered for security.</p>
+        </div>
+        <div class="features-grid">
+            <div class="feature-card glass-panel" data-aos="fade-up" data-aos-delay="100" data-tilt data-tilt-max="15"
+                data-tilt-speed="400" data-tilt-glare="true" data-tilt-max-glare="0.2">
+                <div class="icon-wrapper cyan-glow float-anim-1">
+                    <span class="feature-icon">⚡</span>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-icon">🔒</div>
-                    <h3>Secure</h3>
-                    <p>Your data is protected with secure authentication and encryption</p>
+                <h3>Fast & Easy</h3>
+                <p>Apply for permissions in seconds with an intuitive, highly responsive interface.</p>
+            </div>
+            <div class="feature-card glass-panel" data-aos="fade-up" data-aos-delay="200" data-tilt data-tilt-max="15"
+                data-tilt-speed="400" data-tilt-glare="true" data-tilt-max-glare="0.2">
+                <div class="icon-wrapper purple-glow float-anim-2">
+                    <span class="feature-icon">🔒</span>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-icon">📊</div>
-                    <h3>Real-time Tracking</h3>
-                    <p>Track your permission status in real-time with notifications</p>
+                <h3>Secure</h3>
+                <p>Your data is protected with state-of-the-art authentication and end-to-end encryption.</p>
+            </div>
+            <div class="feature-card glass-panel" data-aos="fade-up" data-aos-delay="300" data-tilt data-tilt-max="15"
+                data-tilt-speed="400" data-tilt-glare="true" data-tilt-max-glare="0.2">
+                <div class="icon-wrapper pink-glow float-anim-3">
+                    <span class="feature-icon">📊</span>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-icon">👥</div>
-                    <h3>Mentor Integration</h3>
-                    <p>Seamless approval workflow between students, mentors, and HOD</p>
+                <h3>Real-time Tracking</h3>
+                <p>Monitor your permission status continuously with push and in-app notifications.</p>
+            </div>
+            <div class="feature-card glass-panel" data-aos="fade-up" data-aos-delay="400" data-tilt data-tilt-max="15"
+                data-tilt-speed="400" data-tilt-glare="true" data-tilt-max-glare="0.2">
+                <div class="icon-wrapper blue-glow float-anim-2">
+                    <span class="feature-icon">👥</span>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-icon">📱</div>
-                    <h3>Mobile Friendly</h3>
-                    <p>Fully responsive design works on all devices</p>
+                <h3>Mentor Integration</h3>
+                <p>Seamless, transparent workflow routing from students directly to mentors and HODs.</p>
+            </div>
+            <div class="feature-card glass-panel" data-aos="fade-up" data-aos-delay="500" data-tilt data-tilt-max="15"
+                data-tilt-speed="400" data-tilt-glare="true" data-tilt-max-glare="0.2">
+                <div class="icon-wrapper emerald-glow float-anim-1">
+                    <span class="feature-icon">📱</span>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-icon">💼</div>
-                    <h3>Multiple Roles</h3>
-                    <p>Dedicated apps for Students, Faculty Mentors, and HOD</p>
+                <h3>Mobile First</h3>
+                <p>Crafted to look beautiful and perform natively on iPhone and top-tier Android devices.</p>
+            </div>
+            <div class="feature-card glass-panel" data-aos="fade-up" data-aos-delay="600" data-tilt data-tilt-max="15"
+                data-tilt-speed="400" data-tilt-glare="true" data-tilt-max-glare="0.2">
+                <div class="icon-wrapper amber-glow float-anim-3">
+                    <span class="feature-icon">💼</span>
                 </div>
+                <h3>Role-Based Hubs</h3>
+                <p>Dedicated, tailored portal experiences for Students, Faculty Mentors, and HODs.</p>
             </div>
         </div>
     </section>
 
     <!-- Apps Section -->
-    <section id="download" class="apps">
-        <div class="container">
-            <h2 class="section-title">Download Apps</h2>
-            <div class="apps-grid">
-                <!-- Student App -->
-                <div class="app-card student-card">
-                    <div class="app-header">
-                        <div class="app-icon">👨‍🎓</div>
-                        <h3>Student App</h3>
-                    </div>
-                    <p class="app-version">Version 3.1.0</p>
-                    <ul class="app-features">
-                        <li>✓ Apply for permissions</li>
-                        <li>✓ View approval status</li>
-                        <li>✓ Track mentor feedback</li>
-                        <li>✓ View permission history</li>
-                    </ul>
-                    <div class="app-info">
-                        <span class="package">com.aiml.permissions</span>
-                    </div>
-                    <a class="download-btn download-btn-primary" href="https://github.com/VishnuMatli/per_web/releases/download/V3.1.0/Student_APP.apk" target="_blank">
-                        <span class="download-icon">⬇️</span> Download APK
-                    </a>
+    <section id="download" class="apps container">
+        <div class="section-header" data-aos="fade-up">
+            <h2 class="section-title">Get the Apps</h2>
+            <p class="section-desc">Choose your dedicated portal to begin your session.</p>
+        </div>
+        <div class="apps-grid">
+            <!-- Student App -->
+            <div class="app-card glass-panel premium-card" data-aos="fade-right" data-aos-delay="200" data-tilt
+                data-tilt-max="10" data-tilt-speed="400" data-tilt-perspective="1000" data-tilt-glare="true"
+                data-tilt-max-glare="0.15">
+                <div class="card-glow student-glow"></div>
+                <div class="app-header">
+                    <div class="icon-wrapper large-icon blue-glow">👨‍🎓</div>
+                    <h3>Student App</h3>
+                    <span class="version-badge">v3.2.0</span>
                 </div>
+                <ul class="app-features">
+                    <li><svg viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd"
+                                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                clip-rule="evenodd" />
+                        </svg> Seamless Application</li>
+                    <li><svg viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd"
+                                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                clip-rule="evenodd" />
+                        </svg> Live Status Updates</li>
+                    <li><svg viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd"
+                                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                clip-rule="evenodd" />
+                        </svg> Mentor Feedback Loop</li>
+                    <li><svg viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd"
+                                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                clip-rule="evenodd" />
+                        </svg> Full Archive History</li>
+                </ul>
+                <div class="package-info">com.aiml.permissions</div>
+                <a class="download-btn btn btn-primary"
+                    href="https://github.com/VishnuMatli/per_web/releases/download/V3.2.0/Student_APP.apk"
+                    target="_blank">
+                    <span>Download APK</span>
+                </a>
+            </div>
 
-                <!-- Faculty App -->
-                <div class="app-card faculty-card">
-                    <div class="app-header">
-                        <div class="app-icon">👨‍🏫</div>
-                        <h3>Faculty App</h3>
-                    </div>
-                    <p class="app-version">Version 3.1.0</p>
-                    <ul class="app-features">
-                        <li>✓ Review student permissions</li>
-                        <li>✓ Approve/Reject requests</li>
-                        <li>✓ View mapped students</li>
-                        <li>✓ Check approval history</li>
-                    </ul>
-                    <div class="app-info">
-                        <span class="package">com.aiml.faculty</span>
-                    </div>
-                    <a class="download-btn download-btn-secondary" href="https://github.com/VishnuMatli/per_web/releases/download/V3.1.0/Faculty_CR.apk" target="_blank">
-                        <span class="download-icon">⬇️</span> Download APK
-                    </a>
+            <!-- Faculty App -->
+            <div class="app-card glass-panel premium-card" data-aos="fade-up" data-aos-delay="100" data-tilt
+                data-tilt-max="10" data-tilt-speed="400" data-tilt-perspective="1000" data-tilt-glare="true"
+                data-tilt-max-glare="0.15">
+                <div class="card-glow faculty-glow"></div>
+                <div class="app-header">
+                    <div class="icon-wrapper large-icon purple-glow">👨‍🏫</div>
+                    <h3>Faculty App</h3>
+                    <span class="version-badge highlight-badge">v3.2.0</span>
                 </div>
+                <ul class="app-features">
+                    <li><svg viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd"
+                                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                clip-rule="evenodd" />
+                        </svg> Fluid Request Review</li>
+                    <li><svg viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd"
+                                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                clip-rule="evenodd" />
+                        </svg> Instant Approvals</li>
+                    <li><svg viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd"
+                                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                clip-rule="evenodd" />
+                        </svg> Roster Management</li>
+                    <li><svg viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd"
+                                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                clip-rule="evenodd" />
+                        </svg> Action Logs</li>
+                </ul>
+                <div class="package-info">com.aiml.faculty</div>
+                <a class="download-btn btn btn-primary gradient-btn"
+                    href="https://github.com/VishnuMatli/per_web/releases/download/V3.2.0/Faculty_CR.apk"
+                    target="_blank">
+                    <span>Download APK</span>
+                </a>
+            </div>
 
-                <!-- Web Version -->
-                <div class="app-card hod-card">
-                    <div class="app-header">
-                        <div class="app-icon">🌐</div>
-                        <h3>Web Version</h3>
-                    </div>
-                    <p class="app-version">Version 2.0.0</p>
-                    <ul class="app-features">
-                        <li>✓ Access from any browser</li>
-                        <li>✓ No installation needed</li>
-                        <li>✓ Real-time updates</li>
-                        <li>✓ Cross-platform support</li>
-                    </ul>
-                    <div class="app-info">
-                        <span class="package">permissions.onrender.com</span>
-                    </div>
-                    <a class="download-btn download-btn-tertiary" href="https://permissions.onrender.com" target="_blank">
-                        <span class="download-icon">🔗</span> Visit Website
-                    </a>
+            <!-- iOS Web App -->
+            <div class="app-card glass-panel premium-card" data-aos="fade-up" data-aos-delay="300" data-tilt
+                data-tilt-max="10" data-tilt-speed="400" data-tilt-perspective="1000" data-tilt-glare="true"
+                data-tilt-max-glare="0.15">
+                <div class="card-glow ios-glow"></div>
+                <div class="app-header">
+                    <div class="icon-wrapper large-icon silver-glow">🍏</div>
+                    <h3 class="app-title">iOS Web App</h3>
+                    <span class="version-badge">PWA</span>
                 </div>
+                <div class="app-features">
+                    <ul class="feature-list">
+                        <li><span class="check-icon">✓</span> Native-like Experience</li>
+                        <li><span class="check-icon">✓</span> Offline Capabilities</li>
+                        <li><span class="check-icon">✓</span> Fast Performance</li>
+                        <li><span class="check-icon">✓</span> Instant Updates</li>
+                    </ul>
+                </div>
+                <div class="app-actions">
+                    <div class="package-name">permissions-pwa.vercel.app</div>
+                    <div style="display: flex; gap: 0.5rem; justify-content: center; flex-wrap: wrap;">
+                        <a href="https://permissions-pwa.vercel.app/" class="btn btn-outline" target="_blank"
+                            rel="noopener">Open App</a>
+                        <button class="btn btn-outline" onclick="toggleIosInstructions(this)">Install Guide</button>
+                    </div>
+                    <!-- Hidden Instructions -->
+                    <div class="ios-instructions"
+                        style="display: none; text-align: left; margin-top: 1rem; padding: 1rem; background: rgba(255,255,255,0.05); border-radius: 12px; font-size: 0.85rem; line-height: 1.5; color: var(--text-secondary); transform: translateZ(20px);">
+                        <ol
+                            style="margin-left: 1.2rem; display: flex; flex-direction: column; gap: 0.5rem; padding-left: 0;">
+                            <li>Open the <strong>App</strong> link above in <strong>Safari</strong>.</li>
+                            <li>Tap the Share icon <svg style="vertical-align: middle; margin: 0 4px;"
+                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"></path>
+                                    <polyline points="16 6 12 2 8 6"></polyline>
+                                    <line x1="12" y1="2" x2="12" y2="15"></line>
+                                </svg> at the bottom.</li>
+                            <li>Scroll down and tap <strong>Add to Home Screen</strong> <svg
+                                    style="vertical-align: middle; margin: 0 4px;" xmlns="http://www.w3.org/2000/svg"
+                                    width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                                    <line x1="12" y1="8" x2="12" y2="16"></line>
+                                    <line x1="8" y1="12" x2="16" y2="12"></line>
+                                </svg>.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Web Version -->
+            <div class="app-card glass-panel premium-card" data-aos="fade-left" data-aos-delay="200" data-tilt
+                data-tilt-max="10" data-tilt-speed="400" data-tilt-perspective="1000" data-tilt-glare="true"
+                data-tilt-max-glare="0.15">
+                <div class="card-glow hod-glow"></div>
+                <div class="app-header">
+                    <div class="icon-wrapper large-icon cyan-glow">🌐</div>
+                    <h3>Web Dashboard</h3>
+                    <span class="version-badge">v2.0.0</span>
+                </div>
+                <ul class="app-features">
+                    <li><svg viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd"
+                                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                clip-rule="evenodd" />
+                        </svg> Universal Access</li>
+                    <li><svg viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd"
+                                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                clip-rule="evenodd" />
+                        </svg> Zero Installation</li>
+                    <li><svg viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd"
+                                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                clip-rule="evenodd" />
+                        </svg> Department Overview</li>
+                    <li><svg viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd"
+                                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                clip-rule="evenodd" />
+                        </svg> System Analytics</li>
+                </ul>
+                <div class="package-info">permissions.onrender.com</div>
+                <a class="download-btn btn btn-outline" href="https://permissions.onrender.com" target="_blank">
+                    <span>Launch App</span>
+                </a>
             </div>
         </div>
     </section>
 
     <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <h2 class="section-title">About This System</h2>
+    <section id="about" class="about container">
+        <div class="about-card glass-panel" data-aos="zoom-in" data-aos-duration="800">
             <div class="about-content">
                 <div class="about-text">
-                    <h3>Digital Permission Management</h3>
-                    <p>The MITS CSE AIML Permission Management System is a modern, mobile-first solution designed to streamline the permission approval process for students, faculty mentors, and department heads.</p>
-                    <p>Built with Flutter for cross-platform compatibility and a robust Node.js backend, this system ensures fast, secure, and transparent permission handling.</p>
-                    <h4>Key Features:</h4>
-                    <ul class="about-list">
-                        <li>Real-time permission status tracking</li>
-                        <li>Multi-level approval workflow (Student → Mentor → HOD)</li>
-                        <li>Mentor mapping and student assignment</li>
-                        <li>Digital approval history and records</li>
-                        <li>Secure authentication and data privacy</li>
-                        <li>Beautiful, intuitive user interface</li>
-                    </ul>
+                    <h2 class="section-title text-left">The Architecture of Approval</h2>
+                    <p class="lead-text">MITS CSE AIML Permission Management System is engineered for the future—a
+                        modern, cloud-native architecture connecting the entire department.</p>
+                    <p>Powered by a blazing-fast Node.js backend and beautiful Flutter client applications, this
+                        platform abolishes paper trails in favor of instantly verifiable, cryptographically secure
+                        digital passes.</p>
+
+                    <div class="stats-row">
+                        <div class="stat-item">
+                            <span class="stat-val text-gradient">3</span>
+                            <span class="stat-label">Platform Apps</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-val text-gradient">10x</span>
+                            <span class="stat-label">Faster Approvals</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-val text-gradient">24/7</span>
+                            <span class="stat-label">Cloud Sync</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="about-stats">
-                    <div class="stat">
-                        <div class="stat-number">3</div>
-                        <div class="stat-label">Apps</div>
-                    </div>
-                    <div class="stat">
-                        <div class="stat-number">∞</div>
-                        <div class="stat-label">Users</div>
-                    </div>
-                    <div class="stat">
-                        <div class="stat-number">100%</div>
-                        <div class="stat-label">Secure</div>
+                <div class="about-visual">
+                    <div class="visual-orb"></div>
+                    <div class="visual-stack">
+                        <div class="stack-card c1 glass-panel"><span>Students</span></div>
+                        <div class="stack-card c2 glass-panel"><span>Mentors</span></div>
+                        <div class="stack-card c3 glass-panel"><span>HOD</span></div>
                     </div>
                 </div>
             </div>
@@ -186,19 +337,110 @@
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <p>&copy; 2026 MITS CSE AIML Permission Management System. All rights reserved.</p>
-            <p class="footer-subtitle">Built with ❤️ for students and faculty</p>
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <div class="logo-icon-wrapper small-wrapper">
+                    <span class="logo-icon">📱</span>
+                </div>
+                <span class="footer-logo-text">MITS CSE AIML</span>
+            </div>
+            <div class="footer-links">
+                <p>&copy; 2026 MITS CSE AIML. Engineering Excellence.</p>
+                <p class="built-with">Forged with <span class="heart">❤️</span> for the next generation.</p>
+            </div>
         </div>
     </footer>
 
-    <!-- Modal for Download Info -->
-    <div id="downloadModal" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <h2 id="modalTitle">Download Instructions</h2>
-            <p id="modalMessage"></p>
-            <div id="downloadLinks" class="download-links"></div>
-        </div>
-    </div></body>
+    <!-- 3D Interactions Script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"
+        integrity="sha512-wC/cunGGDjXSl9OHUH0RuqSyW4YNLlsPwhcLxwWW1CR4OeC2E1xpcdZz2DeQkEmums41laI+eGMw95IJ15SS3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- AOS Scroll Animations -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- tsParticles Background Animation -->
+    <script src="https://cdn.jsdelivr.net/npm/@tsparticles/engine@3.1.0/tsparticles.engine.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tsparticles/basic@3.1.0/tsparticles.basic.min.js"></script>
+    <script
+        src="https://cdn.jsdelivr.net/npm/@tsparticles/interaction-particles-links@3.1.0/tsparticles.interaction.particles.links.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tsparticles/move-base@3.1.0/tsparticles.move.base.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tsparticles/shape-circle@3.1.0/tsparticles.shape.circle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tsparticles/color-utils@3.1.0/tsparticles.color.utils.min.js"></script>
+    <script
+        src="https://cdn.jsdelivr.net/npm/@tsparticles/interaction-events@3.1.0/tsparticles.interaction.events.min.js"></script>
+
+    <script>
+        // Toggle iOS Instructions
+        function toggleIosInstructions(button) {
+            const instructions = button.nextElementSibling;
+            if (instructions.style.display === "none") {
+                instructions.style.display = "block";
+                button.innerText = "Hide Instructions";
+            } else {
+                instructions.style.display = "none";
+                button.innerText = "View Instructions";
+            }
+        }
+
+        // Initialize AOS
+        AOS.init({
+            once: false, // whether animation should happen only once - while scrolling down
+            mirror: true, // whether elements should animate out while scrolling past them
+            offset: 100,
+        });
+
+        // Initialize tsParticles Core Engine + Required Features manually
+        (async () => {
+            await loadBasic(tsParticles);
+            await loadParticlesLinksInteraction(tsParticles);
+            await loadBaseMover(tsParticles);
+            await loadCircleShape(tsParticles);
+            await loadColorUtils(tsParticles);
+            await loadInteractionEvents(tsParticles);
+
+            await tsParticles.load({
+                id: "tsparticles",
+                options: {
+                    background: {
+                        color: { value: "transparent" },
+                    },
+                    fpsLimit: 60,
+                    interactivity: {
+                        events: {
+                            onHover: { enable: true, mode: "grab" },
+                        },
+                        modes: {
+                            grab: { distance: 150, links: { opacity: 0.5 } },
+                        },
+                    },
+                    particles: {
+                        color: { value: ["#06b6d4", "#8b5cf6", "#ec4899"] },
+                        links: {
+                            color: "random",
+                            distance: 150,
+                            enable: true,
+                            opacity: 0.2,
+                            width: 1,
+                        },
+                        move: {
+                            enable: true,
+                            outModes: { default: "bounce" },
+                            speed: 1,
+                        },
+                        number: {
+                            density: { enable: true, width: 800, height: 800 },
+                            value: 60,
+                        },
+                        opacity: { value: 0.5 },
+                        shape: { type: "circle" },
+                        size: { value: { min: 1, max: 3 } },
+                    },
+                    detectRetina: true,
+                },
+            });
+        })();
+    </script>
+</body>
+
 </html>
